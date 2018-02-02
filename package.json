@@ -1,0 +1,18 @@
+{
+  "name": "sergiodperezp.github.io",
+  "version": "0.0.1",
+  "description": "Personal Website",
+  "scripts": {
+    "start": "concurrently \" live-server \" \" node-sass --w ./assets/sass/style.scss ./assets/css/style.css\" \" ./node_modules/.bin/babel ./assets/babel/script.js -w -o ./assets/js/script.js \" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiodperezp/sergiodperezp.github.io.git"
+  },
+  "author": "Sergio Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiodperezp/sergiodperezp.github.io/issues"
+  },
+  "homepage": "https://sergiodperezp.github.io"
+}
