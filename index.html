@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Sergio Perez | Front End Developer</title>
+  <!-- web app -->
+  <meta name="description" content="Technology enthusiast with over 20 years of experience in PCs. Continuously following and implementing modern technologies and best practices. Passionate about web development with a vision of building multi-platform apps based on trending technology.">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="SP">
+  <meta name="apple-mobile-web-app-title" content="SP">
+  <!-- web app icons -->
+  <link rel="icon" type="image/png" sizes="48x48" href="./assets/icons/icon-48.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="48x48" href="./assets/icons/icon-48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/icon-96.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="./assets/icons/icon-96.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="./assets/icons/icon-144.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="./assets/icons/icon-144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="./assets/icons/icon-192.png">
+  <link rel="icon" type="image/png" sizes="240x240" href="./assets/icons/icon-240.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="240x240" href="./assets/icons/icon-240.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/icons/icon-512.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="./assets/icons/icon-512.png">
+  <!-- web app theme -->
+  <meta name="theme-color" content="#1955c3">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-navbutton-color" content="#1955c3">
+  <meta name="msapplication-starturl" content="./">
+  <!-- facebook cards -->
+  <meta property="og:url" content="https://sergiodperezp.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sergio Perez">
+  <meta property="og:title" content="Front End Developer">
+  <meta property="og:description" content="Technology enthusiast with over 20 years of experience in PCs. Continuously following and implementing modern technologies and best practices. Passionate about web development with a vision of building multi-platform apps based on trending technology.">
+  <meta property="og:image" content="https://sergiodperezp.github.io/assets/images/sergio-perez-cover.png">
+  <meta property="og:locale" content="en_US">
+  <!-- twitter cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@sergiodperezp">
+  <!-- json-ld -->
+  <!-- styles -->
+  <!-- basic -->
+  <link href="./assets/css/basic.min.css" rel="stylesheet">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+  <!-- icons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
+  <!-- inline css -->
+  <!-- custom css -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <!-- plugins -->
+  <!-- favicon -->
+  <link href="./favicon.ico" rel="icon">
+  <!-- scripts -->
+  <script>
+    function getPage(page) {
+      fetch('./pages/'+page+'.html')
+      .then(function(response) {
+        return response.text();
+      }).then(function(data) {
+        document.querySelector('#'+page).innerHTML = data;
+      });
+    }
+  </script>
+  <!-- google analytics -->
+  <!-- google analytics -->
+  <!-- google tag manager -->
+  <!-- google tag manager -->
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-top">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- nav -->
+          <div class="nav">
+            <!-- navbar-header -->
+            <div class="navbar-header">
+              <!-- navbar-brand -->
+              <a href="./" class="navbar-brand">
+                <!-- navbar-image -->
+                <img src="./assets/images/sergio-perez-logo.png" alt="Sergio Perez Logo" class="navbar-image">
+                <!-- navbar-image -->
+                <!-- navbar-title -->
+                <h1 class="navbar-title">Sergio Perez</h1>
+                <!-- navbar-title -->
+              </a>
+              <!-- navbar-brand -->
+              <!-- navbar-icon -->
+              <svg height="24" width="24" class="navbar-icon navbar-open">
+                <path d="M 0,6 24,6" stroke="#fff" stroke-width="2" class="path-one"/>
+                <path d="M 0,12 24,12" stroke="#fff" stroke-width="2" class="path-two"/>
+                <path d="M 0,18 24,18" stroke="#fff" stroke-width="2" class="path-three"/>
+              </svg>
+              <!-- navbar-icon -->
+            </div>
+            <!-- navbar-header -->
+            <!-- navbar-menu -->
+            <div id="navbar-menu">
+              <!-- menu-items -->
+              <ul class="menu-items">
+                <li class="menu-item"><a href="#portfolio" class="menu-link">Portfolio</a></li>
+                <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+                <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+              </ul>
+              <!-- menu-items -->
+            </div>
+            <!-- navbar-menu -->
+          </div>
+          <!-- nav -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </nav>
+    <!-- navbar -->
+  </header>
+  <!-- header -->
+
+  <!-- home -->
+  <section id="home">
+
+  </section>
+  <!-- home -->
+
+  <!-- portfolio -->
+  <section class="page" id="portfolio"></section>
+  <script>getPage('portfolio');</script>
+  <!-- portfolio -->
+
+  <!-- contact -->
+  <section class="page" id="contact"></section>
+  <script>getPage('contact');</script>
+  <!-- contact -->
+
+  <!-- about -->
+  <section class="page" id="about"></section>
+  <script>getPage('about');</script>
+  <!-- about -->
+
+  <!-- footer -->
+  <footer>
+
+  </footer>
+  <!-- footer -->
+
+  <!-- scripts -->
+  <!-- service worker -->
+  <!-- <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('./sw.js')
+      .catch(function(err) {
+        console.error('Unable to register service worker.', err);
+      });
+    }
+  </script> -->
+  <!-- basic -->
+  <script src="./assets/js/basic.min.js"></script>
+  <!-- custom scripts -->
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
