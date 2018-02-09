@@ -1,0 +1,23 @@
+.navbar {
+  background-color: $white;
+  border-bottom: 1px solid $gray;
+  .navbar-header {
+    min-height: 72px;
+    padding-left: 24px;
+  }
+  .navbar-title {
+    color: $gray;
+    font-family: $primary-font;
+  }
+  #navbar-menu {
+    top: 72px;
+    background-color: $white;
+  }
+  .menu-item {
+    min-height: 72px;
+  }
+  .menu-link {
+    color: $gray;
+    font-size: 22px;
+  }
+}

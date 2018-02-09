@@ -1,4 +1,13 @@
 html, body {
-  font-family: $primary-font;
-  font-weight: 100;
+  color: $gray;
+  font-family: $secondary-font;
+}
+.page {
+  .page-title {
+    font-family: $primary-font;
+    text-transform: lowercase;
+    h1 {
+      font-size: 48px;
+    }
+  }
 }

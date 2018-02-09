@@ -1,3 +1,42 @@
 html, body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 100; }
+  color: #404040;
+  font-family: "Montserrat", sans-serif; }
+
+.page .page-title {
+  font-family: "Poppins", sans-serif;
+  text-transform: lowercase; }
+  .page .page-title h1 {
+    font-size: 48px; }
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #404040; }
+  .navbar .navbar-header {
+    min-height: 72px;
+    padding-left: 24px; }
+  .navbar .navbar-title {
+    color: #404040;
+    font-family: "Poppins", sans-serif; }
+  .navbar #navbar-menu {
+    top: 72px;
+    background-color: #fff; }
+  .navbar .menu-item {
+    min-height: 72px; }
+  .navbar .menu-link {
+    color: #404040;
+    font-size: 22px; }
+
+#home {
+  height: 100vh; }
+  #home .home {
+    display: flex;
+    align-items: center;
+    height: 100vh; }
+  #home .content {
+    padding-bottom: 24px;
+    text-align: center; }
+    #home .content h1 {
+      font-family: "Poppins", sans-serif;
+      padding: 0 0 12px 0; }
+    #home .content h2 {
+      font-weight: 200; }
