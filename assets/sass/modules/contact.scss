@@ -1,0 +1,50 @@
+#contact {
+  .contact-grid {
+    display: grid;
+    grid-row-gap: 48px;
+    @include tablet-min {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 24px;
+    }
+    @include desktop-min {
+      grid-column-gap: 48px;
+    }
+  }
+  .contact-item {
+    border: 1px solid $gray;
+    padding: 24px;
+    text-align: center;
+    transition: all 1s;
+    .item-inner {
+      color: $gray;
+    }
+    .fas, .fab {
+      font-size: 72px;
+      margin: 0 0 12px 0;
+    }
+    p {
+      font-size: 24px;
+      &:first-of-type {
+        padding: 0 0 12px 0;
+      }
+      &:last-child {
+        font-family: $primary-font;
+        font-weight: 700;
+      }
+    }
+    .email {
+      font-size: 18px;
+      @include small-phone {
+        font-size: 16px;
+      }
+    }
+    &:hover, &:focus, &:active {
+      background-color: $gray;
+      border: none;
+      transform: scale(1.05);
+      .item-inner {
+        color: $white;
+      }
+    }
+  }
+}

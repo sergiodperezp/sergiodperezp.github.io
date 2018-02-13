@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Sergio Perez | Front End Developer</title>
+  <title>Sergio Perez | Front End Developer & IT Support</title>
   <!-- web app -->
-  <meta name="description" content="Technology enthusiast with over 20 years of experience in PCs. Continuously following and implementing modern technologies and best practices. Passionate about web development with a vision of building multi-platform apps based on trending technology.">
+  <meta name="description" content="Web Design, Web Development, IT Support for Windows, Linux, & macOS, Digital Signage">
   <link rel="manifest" href="./manifest.json">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -26,16 +26,16 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./assets/icons/icon-512.png">
   <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="./assets/icons/icon-512.png">
   <!-- web app theme -->
-  <meta name="theme-color" content="#1955c3">
+  <meta name="theme-color" content="#404040">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-navbutton-color" content="#1955c3">
+  <meta name="msapplication-navbutton-color" content="#404040">
   <meta name="msapplication-starturl" content="./">
   <!-- facebook cards -->
   <meta property="og:url" content="https://sergiodperezp.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sergio Perez">
-  <meta property="og:title" content="Front End Developer">
-  <meta property="og:description" content="Technology enthusiast with over 20 years of experience in PCs. Continuously following and implementing modern technologies and best practices. Passionate about web development with a vision of building multi-platform apps based on trending technology.">
+  <meta property="og:title" content="Front End Developer & IT Support">
+  <meta property="og:description" content="Web Design, Web Development, IT Support for Windows, Linux, & macOS, Digital Signage">
   <meta property="og:image" content="https://sergiodperezp.github.io/assets/images/sergio-perez-cover.png">
   <meta property="og:locale" content="en_US">
   <!-- twitter cards -->
@@ -46,7 +46,7 @@
   <!-- basic -->
   <link href="./assets/css/basic.min.css" rel="stylesheet">
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:900|Montserrat:200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:700,900|Montserrat:200" rel="stylesheet">
   <!-- icons -->
   <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
   <!-- inline css -->
@@ -86,9 +86,6 @@
             <div class="navbar-header">
               <!-- navbar-brand -->
               <a href="./" class="navbar-brand">
-                <!-- navbar-image -->
-                <!-- <img src="./assets/images/sergio-perez-logo.png" alt="Sergio Perez Logo" class="navbar-image"> -->
-                <!-- navbar-image -->
                 <!-- navbar-title -->
                 <h1 class="navbar-title">Sergio Perez</h1>
                 <!-- navbar-title -->
@@ -109,8 +106,8 @@
               <ul class="menu-items">
                 <li class="menu-item"><a href="#home" class="menu-link">home</a></li>
                 <li class="menu-item"><a href="#portfolio" class="menu-link">portfolio</a></li>
-                <li class="menu-item"><a href="#contact" class="menu-link">contact</a></li>
-                <li class="menu-item"><a href="#about" class="menu-link">about</a></li>
+                <li class="menu-item"><a href="#contact" class="menu-link">contact me</a></li>
+                <li class="menu-item"><a href="#about" class="menu-link">about me</a></li>
               </ul>
               <!-- menu-items -->
             </div>
@@ -133,7 +130,6 @@
 
   <!-- portfolio -->
   <section class="page" id="portfolio"></section>
-  <script>getPage('portfolio');</script>
   <!-- portfolio -->
 
   <!-- contact -->
@@ -148,30 +144,56 @@
 
   <!-- footer -->
   <footer>
-    <section class="page" id="footer">
+    <!-- page -->
+    <section class="page">
+      <!-- container -->
       <div class="container">
+        <!-- row -->
         <div class="row">
+          <!-- content -->
           <div class="content">
-            <div class="footer">
-              <p>&copy; <span id="year"></span> <a href="./">Sergio Perez</a></p>
+            <!-- footer-social -->
+            <div class="footer-social">
+              <!-- social-icons -->
+              <div class="social-icons">
+                <a href="https://github.com/sergiodperezp" target="_blank">
+                  <i class="fab fa-github-square"></i>
+                </a>
+                <a href="https://twitter.com/sergiodperezp" target="_blank">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </div>
+              <!-- social-icons -->
             </div>
+            <!-- footer-social -->
+            <hr>
+            <!-- footer-bottom -->
+            <div class="footer-bottom">
+              <p>&copy; <span id="year"></span> <a href="./">Sergio Perez</a></p>
+              <p>All other trademarks or registered trademarks are property of their respective owners.</p>
+            </div>
+            <!-- footer-bottom -->
           </div>
+          <!-- content -->
         </div>
+        <!-- row -->
       </div>
+      <!-- container -->
     </section>
+    <!-- page -->
   </footer>
   <!-- footer -->
 
   <!-- scripts -->
   <!-- service worker -->
-  <!-- <script>
+  <script>
     if (navigator.serviceWorker) {
       navigator.serviceWorker.register('./sw.js')
       .catch(function(err) {
         console.error('Unable to register service worker.', err);
       });
     }
-  </script> -->
+  </script>
   <!-- basic -->
   <script src="./assets/js/basic.min.js"></script>
   <!-- custom scripts -->

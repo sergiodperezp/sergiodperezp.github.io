@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.2"
-     inkscape:cx="8.7272294"
+     inkscape:cx="4.3743257"
      inkscape:cy="22.951087"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -59,8 +59,14 @@
      inkscape:label="background"
      style="display:inline">
     <circle
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.98910081;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       style="opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:0.98910081;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        id="path826"
+       cx="6.3499999"
+       cy="6.3499999"
+       r="6.3499999" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.25717998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="path818"
        cx="6.3499999"
        cy="6.3499999"
        r="6.3499999" />
@@ -74,15 +80,15 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot10"
-       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Raleway;-inkscape-font-specification:'Raleway, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#326edc;fill-opacity:1;stroke:none;"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Raleway;-inkscape-font-specification:'Raleway, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1;stroke:none;"
        transform="matrix(0.26458333,0,0,0.26458333,4.2825044,286.59462)"><flowRegion
          id="flowRegion12"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:32px;font-family:Raleway;-inkscape-font-specification:'Raleway, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#326edc;fill-opacity:1;"><rect
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:32px;font-family:Raleway;-inkscape-font-specification:'Raleway, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1;"><rect
            id="rect14"
            width="74.73214"
            height="54.910713"
            x="-11.964286"
            y="-2.9821429"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:32px;font-family:Raleway;-inkscape-font-specification:'Raleway, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#326edc;fill-opacity:1;" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:32px;font-family:Raleway;-inkscape-font-specification:'Raleway, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1;" /></flowRegion><flowPara
          id="flowPara16">SP</flowPara></flowRoot>  </g>
 </svg>

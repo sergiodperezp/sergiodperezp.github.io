@@ -10,10 +10,18 @@
     text-align: center;
     h1 {
       font-family: $primary-font;
-      padding: 0 0 12px 0;
-    }
-    h2 {
-      font-weight: 200;
+      font-size: 32px;
+      padding: 0 0 6px 0;
+      @include small-phone {
+        font-size: 24px;
+      }
+      @include tablet-min {
+        font-size: 44px;
+        padding: 0 0 12px 0;
+      }
+      @include desktop-min {
+        font-size: 48px;
+      }
     }
   }
 }

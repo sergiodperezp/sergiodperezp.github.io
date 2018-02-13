@@ -1,0 +1,27 @@
+footer {
+  background-color: $gray-dark;
+  color: $white;
+  font-size: 14px;
+  text-align: center;
+  a {
+    color: $white;
+  }
+  .footer-social {
+    padding: 0 0 24px 0;
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+      .fab {
+        font-size: 60px;
+      }
+    }
+  }
+  hr {
+    margin: 0 12% 24px 12%;
+  }
+  .footer-bottom {
+    p {
+      line-height: 1.2;
+    }
+  }
+}

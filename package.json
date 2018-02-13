@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Personal Website",
   "scripts": {
-    "start": "concurrently \" live-server \" \" node-sass --w ./assets/sass/style.scss ./assets/css/style.css\" \" ./node_modules/.bin/babel ./assets/babel/script.js -w -o ./assets/js/script.js \" "
+    "start": "concurrently \" live-server \" \" node-sass --w ./assets/sass/style.scss ./assets/css/style.css\" \" ./node_modules/.bin/babel ./assets/babel/script.js -w -o ./assets/js/script.js \" ",
+    "build": "workbox generate:sw"
   },
   "repository": {
     "type": "git",
