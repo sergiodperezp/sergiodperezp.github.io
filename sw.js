@@ -120,7 +120,7 @@ const fileManifest = [
   },
   {
     "url": "pages/contact.html",
-    "revision": "78f82cb9cbc013e3b59bbf400b59c9b3"
+    "revision": "c15c4ef41248ae9853412e64f8aa3597"
   },
   {
     "url": "pages/home.html",
