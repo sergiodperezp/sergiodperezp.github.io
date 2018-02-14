@@ -37,10 +37,15 @@ function displayData(portfolio) {
   for (let i in portfolio) {
 
   portfolioItems += `
-    <a href="${portfolio[i].url}" target="_blank" class="portfolio-item">
-      <img src="./assets/images/portfolio/${portfolio[i].image}.png" alt="${portfolio[i].name}" class="image">
-      <div class="name"><h2>${portfolio[i].name}</h2></div>
-    </a>
+    <div class="portfolio-item">
+      <img src="./assets/images/portfolio/${portfolio[i].image}.png" alt="${portfolio[i].name}" class="item-image">
+      <div class="item-name">
+        <h2 class="name">${portfolio[i].name}</h2>
+      </div>
+      <div class="item-url">
+        <a href="${portfolio[i].url}" target="_blank" class="url">check it out<i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
   `;
   }
   portfolioGrid.innerHTML = portfolioItems;

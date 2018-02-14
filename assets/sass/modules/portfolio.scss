@@ -11,42 +11,65 @@
   }
   .portfolio-item {
     position: relative;
-    display: block;
-    .image {
-      opacity: .4;
+    .item-image {
+      opacity: .2;
       object-fit: cover;
       transition: all 1s;
     }
-    .name {
+    .item-name {
       position: absolute;
       top: 10%;
-      right: 5%;
-      left: 5%;
+      right: 24px;
+      left: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: rgba($black,.6);
       min-height: 80%;
-      width: 90%;
-      transition: all 1s;
-    }
-    h2 {
-      color: $white;
-      font-family: $primary-font;
-      font-size: 24px;
       padding: 12px;
-      text-align: center;
-      text-transform: lowercase;
+      transition: all 1s;
+      .name {
+        color: $white;
+        font-family: $primary-font;
+        font-size: 24px;
+        text-align: center;
+        text-transform: lowercase;
+      }
+    }
+    .item-url {
+      position: absolute;
+      bottom: 10%;
+      right: 24px;
+      background-color: rgba($black,.8);
+      height: 0%;
+      transition: all 1s;
+      .url {
+        display: none;
+        color: $white;
+        font-size: 18px;
+        height: 48px;
+        padding: 0 12px;
+        .fas {
+          padding: 0 0 0 6px;
+        }
+      }
     }
     &:hover, &:focus, &:active {
-      .image {
+      .item-image {
         opacity: 1;
       }
-      .name {
+      .item-name {
         background-color: rgba($black,.8);
-        min-height: 60px;
-        width: 90%;
+        min-height: 48px;
         @include box-shadow-bottom();
+      }
+      .item-url {
+        height: 48px;
+        @include box-shadow-bottom();
+        .url {
+          display: flex;
+          align-items: center;
+        }
       }
     }
   }

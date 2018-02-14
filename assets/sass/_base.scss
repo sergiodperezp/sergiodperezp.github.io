@@ -25,3 +25,8 @@ html, body {
     }
   }
 }
+.content {
+  @include small-phone {
+    padding: 0 24px;
+  }
+}

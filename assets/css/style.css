@@ -23,6 +23,10 @@ html, body {
         .page .page-title h1 {
           font-size: 44px; } }
 
+@media screen and (max-width: 374px) {
+  .content {
+    padding: 0 24px; } }
+
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #404040; }
@@ -97,40 +101,60 @@ html, body {
       #portfolio .portfolio-grid {
         grid-template-columns: repeat(3, 1fr); } }
   #portfolio .portfolio-item {
-    position: relative;
-    display: block; }
-    #portfolio .portfolio-item .image {
-      opacity: .4;
+    position: relative; }
+    #portfolio .portfolio-item .item-image {
+      opacity: .2;
       object-fit: cover;
       transition: all 1s; }
-    #portfolio .portfolio-item .name {
+    #portfolio .portfolio-item .item-name {
       position: absolute;
       top: 10%;
-      right: 5%;
-      left: 5%;
+      right: 24px;
+      left: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: rgba(0, 0, 0, 0.6);
       min-height: 80%;
-      width: 90%;
-      transition: all 1s; }
-    #portfolio .portfolio-item h2 {
-      color: #fff;
-      font-family: "Poppins", sans-serif;
-      font-size: 24px;
       padding: 12px;
-      text-align: center;
-      text-transform: lowercase; }
-    #portfolio .portfolio-item:hover .image, #portfolio .portfolio-item:focus .image, #portfolio .portfolio-item:active .image {
-      opacity: 1; }
-    #portfolio .portfolio-item:hover .name, #portfolio .portfolio-item:focus .name, #portfolio .portfolio-item:active .name {
+      transition: all 1s; }
+      #portfolio .portfolio-item .item-name .name {
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+        text-align: center;
+        text-transform: lowercase; }
+    #portfolio .portfolio-item .item-url {
+      position: absolute;
+      bottom: 10%;
+      right: 24px;
       background-color: rgba(0, 0, 0, 0.8);
-      min-height: 60px;
-      width: 90%;
+      height: 0%;
+      transition: all 1s; }
+      #portfolio .portfolio-item .item-url .url {
+        display: none;
+        color: #fff;
+        font-size: 18px;
+        height: 48px;
+        padding: 0 12px; }
+        #portfolio .portfolio-item .item-url .url .fas {
+          padding: 0 0 0 6px; }
+    #portfolio .portfolio-item:hover .item-image, #portfolio .portfolio-item:focus .item-image, #portfolio .portfolio-item:active .item-image {
+      opacity: 1; }
+    #portfolio .portfolio-item:hover .item-name, #portfolio .portfolio-item:focus .item-name, #portfolio .portfolio-item:active .item-name {
+      background-color: rgba(0, 0, 0, 0.8);
+      min-height: 48px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
       -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
       -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32); }
+    #portfolio .portfolio-item:hover .item-url, #portfolio .portfolio-item:focus .item-url, #portfolio .portfolio-item:active .item-url {
+      height: 48px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
+      -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
+      -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32); }
+      #portfolio .portfolio-item:hover .item-url .url, #portfolio .portfolio-item:focus .item-url .url, #portfolio .portfolio-item:active .item-url .url {
+        display: flex;
+        align-items: center; }
 
 #contact .contact-grid {
   display: grid;
@@ -149,7 +173,8 @@ html, body {
   text-align: center;
   transition: all 1s; }
   #contact .contact-item .item-inner {
-    color: #404040; }
+    color: #404040;
+    display: block; }
   #contact .contact-item .fas, #contact .contact-item .fab {
     font-size: 72px;
     margin: 0 0 12px 0; }
@@ -167,8 +192,7 @@ html, body {
         font-size: 16px; } }
   #contact .contact-item:hover, #contact .contact-item:focus, #contact .contact-item:active {
     background-color: #404040;
-    border: none;
-    transform: scale(1.05); }
+    border: none; }
     #contact .contact-item:hover .item-inner, #contact .contact-item:focus .item-inner, #contact .contact-item:active .item-inner {
       color: #fff; }
 

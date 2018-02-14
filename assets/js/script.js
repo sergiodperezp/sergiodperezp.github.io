@@ -31,7 +31,7 @@ function displayData(portfolio) {
 
   for (var i in portfolio) {
 
-    portfolioItems += '\n    <a href="' + portfolio[i].url + '" target="_blank" class="portfolio-item">\n      <img src="./assets/images/portfolio/' + portfolio[i].image + '.png" alt="' + portfolio[i].name + '" class="image">\n      <div class="name"><h2>' + portfolio[i].name + '</h2></div>\n    </a>\n  ';
+    portfolioItems += '\n    <div class="portfolio-item">\n      <img src="./assets/images/portfolio/' + portfolio[i].image + '.png" alt="' + portfolio[i].name + '" class="item-image">\n      <div class="item-name">\n        <h2 class="name">' + portfolio[i].name + '</h2>\n      </div>\n      <div class="item-url">\n        <a href="' + portfolio[i].url + '" target="_blank" class="url">check it out<i class="fas fa-chevron-right"></i></a>\n      </div>\n    </div>\n  ';
   }
   portfolioGrid.innerHTML = portfolioItems;
 }

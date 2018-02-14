@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "assets/css/style.css",
-    "revision": "a2cb52bef29ae27b5c8cc736c39d7915"
+    "revision": "0238cda72280f46a9b916e232580e5ca"
   },
   {
     "url": "assets/data/data.json",
@@ -32,31 +32,31 @@ const fileManifest = [
   },
   {
     "url": "assets/icons/icon-144.png",
-    "revision": "9ea07292f96828d28b4a2e470807fa8b"
+    "revision": "8e519349340c8e9a83174b65a206ea56"
   },
   {
     "url": "assets/icons/icon-192.png",
-    "revision": "5aba332a4e82964955c75fbc0b420f5f"
+    "revision": "dcf582c2e19a08a850efc3f654580d25"
   },
   {
     "url": "assets/icons/icon-240.png",
-    "revision": "7bae0fcc3e5e452e57a046df9cee672b"
+    "revision": "0c52696a7622795fd115d2f2e05e5636"
   },
   {
     "url": "assets/icons/icon-48.png",
-    "revision": "0e1bc6bb8bd11d7a1a73a7e045e0b7f8"
+    "revision": "546d2c95e03064c02a65cd7e77955087"
   },
   {
     "url": "assets/icons/icon-512.png",
-    "revision": "dced1da85dbea7992009924979da121d"
+    "revision": "c2a20e958f5435fed8cc61420e6fb7f8"
   },
   {
     "url": "assets/icons/icon-96.png",
-    "revision": "08f25738afdd3e9f149b5cf975288ab1"
+    "revision": "fbb2c766165645871ee24d73127bbe80"
   },
   {
     "url": "assets/icons/icon.svg",
-    "revision": "2440ce926033563babc0e625a314c274"
+    "revision": "06947c00c931724f671a874f946f8b2f"
   },
   {
     "url": "assets/images/portfolio/antojo-taco-wrap.png",
@@ -92,7 +92,7 @@ const fileManifest = [
   },
   {
     "url": "assets/images/sergio-perez-logo.png",
-    "revision": "e0643e34eb0bc81644dc4017763c0675"
+    "revision": "c2a20e958f5435fed8cc61420e6fb7f8"
   },
   {
     "url": "assets/js/basic.min.js",
@@ -100,7 +100,7 @@ const fileManifest = [
   },
   {
     "url": "assets/js/script.js",
-    "revision": "655006cabde658868e1707df166f9d7c"
+    "revision": "90420be71cca94125cfe87f6ad3bbdc2"
   },
   {
     "url": "favicon.ico",

@@ -16,7 +16,7 @@
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="icon.svg"
-   inkscape:export-filename="Y:\projects\online\sergiodperezp.github.io\assets\icons\icon-512-1.png"
+   inkscape:export-filename="Y:\projects\online\sergiodperezp.github.io\assets\icons\icon-512.png"
    inkscape:export-xdpi="1024"
    inkscape:export-ydpi="1024">
   <defs
@@ -29,10 +29,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.2"
-     inkscape:cx="4.3743257"
+     inkscape:cx="8.6785714"
      inkscape:cy="22.951087"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:showpageshadow="false"
@@ -69,7 +69,9 @@
        id="path818"
        cx="6.3499999"
        cy="6.3499999"
-       r="6.3499999" />
+       r="6.3499999"
+       inkscape:export-xdpi="1024"
+       inkscape:export-ydpi="1024" />
   </g>
   <g
      inkscape:label="sp"
@@ -80,15 +82,17 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot10"
-       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Raleway;-inkscape-font-specification:'Raleway, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1;stroke:none;"
-       transform="matrix(0.26458333,0,0,0.26458333,4.2825044,286.59462)"><flowRegion
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666794px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,4.9860312,287.78078)"
+       inkscape:export-xdpi="1024"
+       inkscape:export-ydpi="1024"><flowRegion
          id="flowRegion12"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:32px;font-family:Raleway;-inkscape-font-specification:'Raleway, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1;"><rect
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666794px;font-family:Poppins;-inkscape-font-specification:'Poppins, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1"><rect
            id="rect14"
            width="74.73214"
            height="54.910713"
            x="-11.964286"
            y="-2.9821429"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:32px;font-family:Raleway;-inkscape-font-specification:'Raleway, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1;" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:26.66666794px;font-family:Poppins;-inkscape-font-specification:'Poppins, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1" /></flowRegion><flowPara
          id="flowPara16">SP</flowPara></flowRoot>  </g>
 </svg>
