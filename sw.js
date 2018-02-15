@@ -55,10 +55,6 @@ const fileManifest = [
     "revision": "fbb2c766165645871ee24d73127bbe80"
   },
   {
-    "url": "assets/icons/icon.svg",
-    "revision": "06947c00c931724f671a874f946f8b2f"
-  },
-  {
     "url": "assets/images/portfolio/antojo-taco-wrap.png",
     "revision": "58a8c0ed0d111d7d8500b558afe22bab"
   },
@@ -100,7 +96,7 @@ const fileManifest = [
   },
   {
     "url": "assets/js/script.js",
-    "revision": "90420be71cca94125cfe87f6ad3bbdc2"
+    "revision": "878055450cf6f098519f6f445256ffd4"
   },
   {
     "url": "favicon.ico",
@@ -108,7 +104,7 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "92ade7fd87d927a3e4eb25b0d01633e5"
+    "revision": "6e9d951319c793be2196a4a6bee8f097"
   },
   {
     "url": "manifest.json",
@@ -125,6 +121,14 @@ const fileManifest = [
   {
     "url": "pages/home.html",
     "revision": "a328ca435256aa27cad04f383abac757"
+  },
+  {
+    "url": "pages/services.html",
+    "revision": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "url": "README.md",
+    "revision": "8b3811e862c8bdaa507348470397c329"
   }
 ];
 

@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Personal Website",
   "scripts": {
-    "start": "concurrently \" live-server \" \" node-sass --w ./assets/sass/style.scss ./assets/css/style.css\" \" ./node_modules/.bin/babel ./assets/babel/script.js -w -o ./assets/js/script.js \" ",
-    "build": "workbox generate:sw"
+    "start": "concurrently \" webpack \" \" node-sass --w ./src/sass/style.scss ./assets/css/style.css \"",
+    "build": "workbox generate:sw",
+    "start:old": "concurrently \" live-server \" \" node-sass --w ./assets/sass/style.scss ./assets/css/style.css\" \" ./node_modules/.bin/babel ./assets/babel/script.js -w -o ./assets/js/script.js \" "
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,11 @@
   },
   "homepage": "https://sergiodperezp.github.io",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "webpack": "^3.11.0"
   }
 }
