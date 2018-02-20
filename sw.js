@@ -28,7 +28,7 @@ const fileManifest = [
   },
   {
     "url": "assets/data/data.json",
-    "revision": "b3d9156184d448e8cbdd5d33719a5091"
+    "revision": "bc42ce7d9433ab3f00ad6d5a235f5db2"
   },
   {
     "url": "assets/icons/icon-144.png",
