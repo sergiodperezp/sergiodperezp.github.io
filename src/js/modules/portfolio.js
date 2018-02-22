@@ -1,6 +1,7 @@
 /*
 portfolio
 */
+// portfolio page
 const portfolioPage = document.querySelector('#portfolio');
 
 // page structure
@@ -15,8 +16,10 @@ const portfolioStructure = `
   </div>
 `;
 
+// insert structure in page
 portfolioPage.innerHTML = portfolioStructure;
 
+// portfolio grid
 const portfolioGrid = document.querySelector('.portfolio-grid');
 
 // getting data

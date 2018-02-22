@@ -71,6 +71,7 @@
 
 
 __webpack_require__(1);
+
 __webpack_require__(2);
 
 /***/ }),
@@ -83,13 +84,16 @@ __webpack_require__(2);
 /*
 portfolio
 */
+// portfolio page
 var portfolioPage = document.querySelector('#portfolio');
 
 // page structure
 var portfolioStructure = '\n  <div class="container">\n    <div class="row">\n      <div class="page-title">\n        <h1>Portfolio</h1>\n      </div>\n      <div class="portfolio-grid"></div>\n    </div>\n  </div>\n';
 
+// insert structure in page
 portfolioPage.innerHTML = portfolioStructure;
 
+// portfolio grid
 var portfolioGrid = document.querySelector('.portfolio-grid');
 
 // getting data
@@ -126,11 +130,13 @@ function displayData(portfolio) {
 /*
 footer
 */
+// footer page
 var footerPage = document.querySelector('footer');
 
 // page structure
 var footerStructure = '\n  <!-- page -->\n  <section class="page">\n    <!-- container -->\n    <div class="container">\n      <!-- row -->\n      <div class="row">\n        <!-- content -->\n        <div class="content">\n          <!-- footer-social -->\n          <div class="footer-social">\n            <!-- social-icons -->\n            <div class="social-icons">\n              <a href="https://github.com/sergiodperezp" target="_blank">\n                <i class="fab fa-github-square"></i>\n              </a>\n              <a href="https://twitter.com/sergiodperezp" target="_blank">\n                <i class="fab fa-twitter-square"></i>\n              </a>\n            </div>\n            <!-- social-icons -->\n          </div>\n          <!-- footer-social -->\n          <hr>\n          <!-- footer-bottom -->\n          <div class="footer-bottom">\n            <p>&copy; <span id="year"></span> <a href="./">Sergio Perez</a></p>\n            <p>All other trademarks or registered trademarks are property of their respective owners.</p>\n          </div>\n          <!-- footer-bottom -->\n        </div>\n        <!-- content -->\n      </div>\n      <!-- row -->\n    </div>\n    <!-- container -->\n  </section>\n  <!-- page -->\n';
 
+// insert structure in page
 footerPage.innerHTML = footerStructure;
 
 var year = new Date();

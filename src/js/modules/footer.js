@@ -1,6 +1,7 @@
 /*
 footer
 */
+// footer page
 const footerPage = document.querySelector('footer');
 
 // page structure
@@ -44,6 +45,7 @@ const footerStructure = `
   <!-- page -->
 `;
 
+// insert structure in page
 footerPage.innerHTML = footerStructure;
 
 const year = new Date();

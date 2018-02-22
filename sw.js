@@ -96,7 +96,7 @@ const fileManifest = [
   },
   {
     "url": "assets/js/script.js",
-    "revision": "878055450cf6f098519f6f445256ffd4"
+    "revision": "b3356c831fbc889af17492ef3ae24d59"
   },
   {
     "url": "favicon.ico",

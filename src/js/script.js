@@ -1,2 +1,2 @@
-require('./portfolio.js');
-require('./footer.js');
+import './modules/portfolio';
+import './modules/footer';
