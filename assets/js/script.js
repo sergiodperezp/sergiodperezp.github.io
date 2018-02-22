@@ -70,12 +70,36 @@
 "use strict";
 
 
-__webpack_require__(1);
+__webpack_require__(3);
 
-__webpack_require__(2);
+__webpack_require__(1);
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+footer
+*/
+// footer page
+var footerPage = document.querySelector('footer');
+
+// page structure
+var footerStructure = '\n  <!-- page -->\n  <section class="page">\n    <!-- container -->\n    <div class="container">\n      <!-- row -->\n      <div class="row">\n        <!-- content -->\n        <div class="content">\n          <!-- footer-social -->\n          <div class="footer-social">\n            <!-- social-icons -->\n            <div class="social-icons">\n              <a href="https://github.com/sergiodperezp" target="_blank">\n                <i class="fab fa-github-square"></i>\n              </a>\n              <a href="https://twitter.com/sergiodperezp" target="_blank">\n                <i class="fab fa-twitter-square"></i>\n              </a>\n            </div>\n            <!-- social-icons -->\n          </div>\n          <!-- footer-social -->\n          <hr>\n          <!-- footer-bottom -->\n          <div class="footer-bottom">\n            <p>&copy; <span id="year"></span> <a href="./">Sergio Perez</a></p>\n            <p>All other trademarks or registered trademarks are property of their respective owners.</p>\n          </div>\n          <!-- footer-bottom -->\n        </div>\n        <!-- content -->\n      </div>\n      <!-- row -->\n    </div>\n    <!-- container -->\n  </section>\n  <!-- page -->\n';
+
+// insert structure in page
+footerPage.innerHTML = footerStructure;
+
+var year = new Date();
+
+document.querySelector('#year').innerHTML = year.getFullYear();
+
+/***/ }),
+/* 2 */,
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109,39 +133,41 @@ function getData() {
 getData();
 
 // displaying data
-function displayData(portfolio) {
+function displayData(personal) {
 
   var portfolioItems = '';
 
-  for (var i in portfolio) {
+  for (var i in personal) {
 
-    portfolioItems += '\n    <div class="portfolio-item">\n      <img src="./assets/images/portfolio/' + portfolio[i].image + '.png" alt="' + portfolio[i].name + '" class="item-image">\n      <div class="item-name">\n        <h2 class="name">' + portfolio[i].name + '</h2>\n      </div>\n      <div class="item-url">\n        <a href="' + portfolio[i].url + '" target="_blank" class="url">check it out<i class="fas fa-chevron-right"></i></a>\n      </div>\n    </div>\n  ';
+    var portfolio = personal[i].portfolio;
+
+    for (var j in portfolio) {
+
+      portfolioItems += '\n        <div class="portfolio-item">\n          <img src="./assets/images/portfolio/' + portfolio[j].image + '.png" alt="' + portfolio[j].name + '" class="item-image">\n          <div class="item-name">\n            <h2 class="name">' + portfolio[j].name + '</h2>\n          </div>\n          <div class="item-url">\n            <a href="' + portfolio[j].url + '" target="_blank" class="url">check it out<i class="fas fa-chevron-right"></i></a>\n          </div>\n        </div>\n      ';
+    }
   }
   portfolioGrid.innerHTML = portfolioItems;
 }
+// function displayData(portfolio) {
 
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+//   let portfolioItems = '';
 
-"use strict";
+//   for (let i in portfolio) {
 
-
-/*
-footer
-*/
-// footer page
-var footerPage = document.querySelector('footer');
-
-// page structure
-var footerStructure = '\n  <!-- page -->\n  <section class="page">\n    <!-- container -->\n    <div class="container">\n      <!-- row -->\n      <div class="row">\n        <!-- content -->\n        <div class="content">\n          <!-- footer-social -->\n          <div class="footer-social">\n            <!-- social-icons -->\n            <div class="social-icons">\n              <a href="https://github.com/sergiodperezp" target="_blank">\n                <i class="fab fa-github-square"></i>\n              </a>\n              <a href="https://twitter.com/sergiodperezp" target="_blank">\n                <i class="fab fa-twitter-square"></i>\n              </a>\n            </div>\n            <!-- social-icons -->\n          </div>\n          <!-- footer-social -->\n          <hr>\n          <!-- footer-bottom -->\n          <div class="footer-bottom">\n            <p>&copy; <span id="year"></span> <a href="./">Sergio Perez</a></p>\n            <p>All other trademarks or registered trademarks are property of their respective owners.</p>\n          </div>\n          <!-- footer-bottom -->\n        </div>\n        <!-- content -->\n      </div>\n      <!-- row -->\n    </div>\n    <!-- container -->\n  </section>\n  <!-- page -->\n';
-
-// insert structure in page
-footerPage.innerHTML = footerStructure;
-
-var year = new Date();
-
-document.querySelector('#year').innerHTML = year.getFullYear();
+//   portfolioItems += `
+//     <div class="portfolio-item">
+//       <img src="./assets/images/portfolio/${portfolio[i].image}.png" alt="${portfolio[i].name}" class="item-image">
+//       <div class="item-name">
+//         <h2 class="name">${portfolio[i].name}</h2>
+//       </div>
+//       <div class="item-url">
+//         <a href="${portfolio[i].url}" target="_blank" class="url">check it out<i class="fas fa-chevron-right"></i></a>
+//       </div>
+//     </div>
+//   `;
+//   }
+//   portfolioGrid.innerHTML = portfolioItems;
+// }
 
 /***/ })
 /******/ ]);

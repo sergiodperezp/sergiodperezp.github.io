@@ -28,7 +28,7 @@ const fileManifest = [
   },
   {
     "url": "assets/data/data.json",
-    "revision": "bc42ce7d9433ab3f00ad6d5a235f5db2"
+    "revision": "a55d9013f4092a480873e5e1a2c0af2d"
   },
   {
     "url": "assets/icons/icon-144.png",
@@ -96,7 +96,7 @@ const fileManifest = [
   },
   {
     "url": "assets/js/script.js",
-    "revision": "b3356c831fbc889af17492ef3ae24d59"
+    "revision": "22d3c38e26972ed1101c813aeaf9668f"
   },
   {
     "url": "favicon.ico",

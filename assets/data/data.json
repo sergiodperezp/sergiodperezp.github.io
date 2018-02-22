@@ -1,42 +1,52 @@
 [
   {
-    "name": "Tech Feed",
-    "url": "https://sergiodperezp.github.io/tech-feed/",
-    "image": "tech-feed"
+    "services": [
+      {
+      }
+    ]
   },
   {
-    "name": "Systems & Architecture",
-    "url": "https://sysandarc.com/",
-    "image": "systems-and-architecture"
-  },
-  {
-    "name": "Antojo Taco Wrap",
-    "url": "https://antojotacowrap.com/",
-    "image": "antojo-taco-wrap"
-  },
-  {
-    "name": "Tripoli Halal Meat",
-    "url": "https://tripolihalalmeat.com/",
-    "image": "tripoli-halal-meat"
-  },
-  {
-    "name": "Apex Furniture Refinishing",
-    "url": "http://atlantafurniturerefinishing.com/",
-    "image": "apex-furniture-refinishing"
-  },
-  {
-    "name": "Sistemas & Arquitectura",
-    "url": "http://sistemasyarquitectura.com/",
-    "image": "sistemas-y-arquitectura"
-  },
-  {
-    "name": "Once In a Lifetime Bridal Boutique",
-    "url": "https://sysandarc.com/sites/1lifetimebridal/",
-    "image": "once-in-a-lifetime-bridal-boutique"
-  },
-  {
-    "name": "Taxi Familiar",
-    "url": "https://sysandarc.com/sites/taxifamiliar/",
-    "image": "taxi-familiar"
+    "portfolio": [
+      {
+        "name": "Tech Feed",
+        "url": "https://sergiodperezp.github.io/tech-feed/",
+        "image": "tech-feed"
+      },
+      {
+        "name": "Systems & Architecture",
+        "url": "https://sysandarc.com/",
+        "image": "systems-and-architecture"
+      },
+      {
+        "name": "Antojo Taco Wrap",
+        "url": "https://antojotacowrap.com/",
+        "image": "antojo-taco-wrap"
+      },
+      {
+        "name": "Tripoli Halal Meat",
+        "url": "https://tripolihalalmeat.com/",
+        "image": "tripoli-halal-meat"
+      },
+      {
+        "name": "Apex Furniture Refinishing",
+        "url": "http://atlantafurniturerefinishing.com/",
+        "image": "apex-furniture-refinishing"
+      },
+      {
+        "name": "Sistemas & Arquitectura",
+        "url": "http://sistemasyarquitectura.com/",
+        "image": "sistemas-y-arquitectura"
+      },
+      {
+        "name": "Once In a Lifetime Bridal Boutique",
+        "url": "https://sysandarc.com/sites/1lifetimebridal/",
+        "image": "once-in-a-lifetime-bridal-boutique"
+      },
+      {
+        "name": "Taxi Familiar",
+        "url": "https://sysandarc.com/sites/taxifamiliar/",
+        "image": "taxi-familiar"
+      }
+    ]
   }
 ]
