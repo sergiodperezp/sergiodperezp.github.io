@@ -70,12 +70,99 @@
 "use strict";
 
 
-__webpack_require__(3);
-
 __webpack_require__(1);
+
+__webpack_require__(2);
+
+__webpack_require__(3);
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// portfolio page
+var portfolioPage = document.querySelector('#portfolio');
+// page structure
+var portfolioStructure = '\n  <div class="container">\n    <div class="row">\n      <div class="page-title">\n        <h1 class="portfolio-title"></h1>\n      </div>\n      <div class="portfolio"></div>\n    </div>\n  </div>\n';
+// insert portfolio structure in page
+portfolioPage.innerHTML = portfolioStructure;
+// portfolio title
+var portfolioTitle = document.querySelector('.portfolio-title');
+// portfolio itself
+var portfolio = document.querySelector('.portfolio');
+
+// data url
+var dataUrl = './assets/data/data.json';
+// getting data
+function getData() {
+  fetch(dataUrl).then(function (response) {
+    return response.json();
+  }).then(function (data) {
+    displayPortfolio(data[1]);
+  });
+}
+getData();
+
+var portfolioCategory = '';
+// displaying portfolio
+function displayPortfolio(portfolioData) {
+  // portfolio title
+  var portfolioTitleText = '';
+  // looping into the portfolio
+  for (var i in portfolioData) {
+
+    portfolioTitleText += portfolioData[i].page_name;
+
+    var categories = portfolioData[i].portfolio_categories;
+    // looping into the categories
+    for (var j in categories) {
+      // displaying the portfolio categories
+      portfolioCategory += '\n        <div class="portfolio-category" id="' + categories[j].name_id + '">\n          <h2>' + categories[j].name + '</h2>\n          <div class="portfolio-items">\n      ';
+
+      var items = categories[j].portfolio_items;
+      // looping into the items
+      for (var k in items) {
+        // sending items into its respective function to display
+        if (categories[j].name === 'Web Design') {
+          portfolioWebDesign(items[k]);
+        } else if (categories[j].name === 'Custom PC Building') {
+          portfolioCustomPC(items[k]);
+        }
+      }
+      portfolioCategory += '\n          </div>\n        </div>\n      ';
+    }
+  }
+  portfolioTitle.textContent = portfolioTitleText;
+  portfolio.innerHTML = portfolioCategory;
+}
+// displaying portfolio web design
+function portfolioWebDesign(webDesign) {
+  portfolioCategory += '\n    <div class="portfolio-item">\n      <img src="./assets/images/portfolio/' + webDesign.image + '.png" alt="' + webDesign.name + '" class="item-image">\n      <div class="item-name">\n        <h3 class="name">' + webDesign.name + '</h3>\n      </div>\n      <div class="item-url">\n        <a href="' + webDesign.url + '" target="_blank" class="url">check it out<i class="fas fa-chevron-right"></i></a>\n      </div>\n    </div>\n  ';
+}
+// displaying portfolio custom pc building
+function portfolioCustomPC(customPC) {
+  portfolioCategory += '\n    <div class="portfolio-item">\n      <div class="item-inner">\n        <img src="./assets/images/portfolio/' + customPC.images[0] + '.png" alt="' + customPC.name + '" class="item-image">\n        <div class="item-name">\n          <h3 class="name">' + customPC.name + '</h3>\n        </div>\n      </div>\n      <div class="item-images">\n  ';
+
+  var images = customPC.images;
+
+  for (var l in images) {
+
+    portfolioCategory += '\n      <img src="./assets/images/portfolio/' + images[l] + '.png" alt="' + customPC.name + '" class="images">\n    ';
+  }
+  portfolioCategory += '\n      </div>\n    </div>\n  ';
+}
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -96,78 +183,6 @@ footerPage.innerHTML = footerStructure;
 var year = new Date();
 
 document.querySelector('#year').innerHTML = year.getFullYear();
-
-/***/ }),
-/* 2 */,
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/*
-portfolio
-*/
-// portfolio page
-var portfolioPage = document.querySelector('#portfolio');
-
-// page structure
-var portfolioStructure = '\n  <div class="container">\n    <div class="row">\n      <div class="page-title">\n        <h1>Portfolio</h1>\n      </div>\n      <div class="portfolio-grid"></div>\n    </div>\n  </div>\n';
-
-// insert structure in page
-portfolioPage.innerHTML = portfolioStructure;
-
-// portfolio grid
-var portfolioGrid = document.querySelector('.portfolio-grid');
-
-// getting data
-var portfolioUrl = './assets/data/data.json';
-
-function getData() {
-  fetch(portfolioUrl).then(function (response) {
-    return response.json();
-  }).then(function (data) {
-    return displayData(data);
-  });
-}
-getData();
-
-// displaying data
-function displayData(personal) {
-
-  var portfolioItems = '';
-
-  for (var i in personal) {
-
-    var portfolio = personal[i].portfolio;
-
-    for (var j in portfolio) {
-
-      portfolioItems += '\n        <div class="portfolio-item">\n          <img src="./assets/images/portfolio/' + portfolio[j].image + '.png" alt="' + portfolio[j].name + '" class="item-image">\n          <div class="item-name">\n            <h2 class="name">' + portfolio[j].name + '</h2>\n          </div>\n          <div class="item-url">\n            <a href="' + portfolio[j].url + '" target="_blank" class="url">check it out<i class="fas fa-chevron-right"></i></a>\n          </div>\n        </div>\n      ';
-    }
-  }
-  portfolioGrid.innerHTML = portfolioItems;
-}
-// function displayData(portfolio) {
-
-//   let portfolioItems = '';
-
-//   for (let i in portfolio) {
-
-//   portfolioItems += `
-//     <div class="portfolio-item">
-//       <img src="./assets/images/portfolio/${portfolio[i].image}.png" alt="${portfolio[i].name}" class="item-image">
-//       <div class="item-name">
-//         <h2 class="name">${portfolio[i].name}</h2>
-//       </div>
-//       <div class="item-url">
-//         <a href="${portfolio[i].url}" target="_blank" class="url">check it out<i class="fas fa-chevron-right"></i></a>
-//       </div>
-//     </div>
-//   `;
-//   }
-//   portfolioGrid.innerHTML = portfolioItems;
-// }
 
 /***/ })
 /******/ ]);

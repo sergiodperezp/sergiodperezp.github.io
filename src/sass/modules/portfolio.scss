@@ -1,76 +1,128 @@
 #portfolio {
-  background-color: $gray-lighter;
-  .portfolio-grid {
-    display: grid;
-    @include tablet-min {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @include desktop-min {
-      grid-template-columns: repeat(3, 1fr);
+  .portfolio-category {
+    padding: 0 0 96px;
+    h2 {
+      font-family: $primary-font;
+      font-size: 44px;
+      font-weight: 700;
+      padding: 0 24px 36px;
+      text-align: center;
+      text-transform: lowercase;
     }
   }
-  .portfolio-item {
-    position: relative;
+  #web-design {
+    .portfolio-items {
+      display: grid;
+      @include tablet-min {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .portfolio-item {
+      position: relative;
+      .item-image {
+        opacity: .2;
+        object-fit: cover;
+        transition: all 1s;
+      }
+      .item-name {
+        position: absolute;
+        top: 10%;
+        right: 24px;
+        left: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($black,.6);
+        min-height: 80%;
+        padding: 12px;
+        transition: all 1s;
+        .name {
+          color: $white;
+          font-family: $primary-font;
+          font-size: 24px;
+          font-weight: 700;
+          text-align: center;
+          text-transform: lowercase;
+        }
+      }
+      .item-url {
+        position: absolute;
+        bottom: 10%;
+        right: 24px;
+        background-color: rgba($black,.8);
+        height: 0%;
+        transition: all 1s;
+        .url {
+          display: none;
+          color: $white;
+          font-size: 18px;
+          height: 48px;
+          padding: 0 12px;
+          .fas {
+            padding: 0 0 0 6px;
+          }
+        }
+      }
+      &:hover, &:focus, &:active {
+        .item-image {
+          opacity: 1;
+        }
+        .item-name {
+          background-color: rgba($black,.8);
+          min-height: 48px;
+          @include box-shadow-bottom();
+        }
+        .item-url {
+          height: 48px;
+          @include box-shadow-bottom();
+          .url {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  #custom-pc-building {
+    .portfolio-item {
+      padding: 0 0 72px;
+    }
+    .item-inner {
+      position: relative;
+      margin: 0 0 12px;
+    }
     .item-image {
-      opacity: .2;
-      object-fit: cover;
-      transition: all 1s;
+      max-height: 250px;
     }
     .item-name {
       position: absolute;
-      top: 10%;
-      right: 24px;
-      left: 24px;
+      bottom: 12px;
+      right: 12px;
+      left: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: rgba($black,.6);
-      min-height: 80%;
-      padding: 12px;
-      transition: all 1s;
+      height: 48px;
+      padding: 0 12px;
       .name {
         color: $white;
-        font-family: $primary-font;
         font-size: 24px;
-        text-align: center;
         text-transform: lowercase;
       }
     }
-    .item-url {
-      position: absolute;
-      bottom: 10%;
-      right: 24px;
-      background-color: rgba($black,.8);
-      height: 0%;
-      transition: all 1s;
-      .url {
-        display: none;
-        color: $white;
-        font-size: 18px;
-        height: 48px;
-        padding: 0 12px;
-        .fas {
-          padding: 0 0 0 6px;
-        }
+    .item-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 12px;
+      grid-row-gap: 12px;
+      padding: 0 12px;
+      .images {
+        max-height: 200px;
       }
     }
-    &:hover, &:focus, &:active {
-      .item-image {
-        opacity: 1;
-      }
-      .item-name {
-        background-color: rgba($black,.8);
-        min-height: 48px;
-        @include box-shadow-bottom();
-      }
-      .item-url {
-        height: 48px;
-        @include box-shadow-bottom();
-        .url {
-          display: flex;
-          align-items: center;
-        }
-      }
-    }
+  }
+  #digital-signage {
+
   }
 }

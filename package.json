@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "description": "Personal Website",
   "scripts": {
-    "start": "concurrently \" webpack \" \" node-sass --w ./src/sass/style.scss ./assets/css/style.css \"",
-    "build": "workbox generate:sw",
-    "start:old": "concurrently \" live-server \" \" node-sass --w ./assets/sass/style.scss ./assets/css/style.css\" \" ./node_modules/.bin/babel ./assets/babel/script.js -w -o ./assets/js/script.js \" "
+    "start": "webpack",
+    "pwa": "workbox generateSW workbox-config.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +22,11 @@
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
     "browser-sync-webpack-plugin": "^2.0.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
     "webpack": "^3.11.0"
   }
 }

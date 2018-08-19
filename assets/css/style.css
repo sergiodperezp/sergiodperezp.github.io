@@ -90,71 +90,113 @@ html, body {
         #home .content h1 {
           font-size: 48px; } }
 
-#portfolio {
-  background-color: #f0f0f0; }
-  #portfolio .portfolio-grid {
-    display: grid; }
-    @media screen and (min-width: 768px) {
-      #portfolio .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr); } }
-    @media screen and (min-width: 1200px) {
-      #portfolio .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr); } }
-  #portfolio .portfolio-item {
-    position: relative; }
-    #portfolio .portfolio-item .item-image {
-      opacity: .2;
-      object-fit: cover;
-      transition: all 1s; }
-    #portfolio .portfolio-item .item-name {
-      position: absolute;
-      top: 10%;
-      right: 24px;
-      left: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.6);
-      min-height: 80%;
-      padding: 12px;
-      transition: all 1s; }
-      #portfolio .portfolio-item .item-name .name {
-        color: #fff;
-        font-family: "Poppins", sans-serif;
-        font-size: 24px;
-        text-align: center;
-        text-transform: lowercase; }
-    #portfolio .portfolio-item .item-url {
-      position: absolute;
-      bottom: 10%;
-      right: 24px;
-      background-color: rgba(0, 0, 0, 0.8);
-      height: 0%;
-      transition: all 1s; }
-      #portfolio .portfolio-item .item-url .url {
-        display: none;
-        color: #fff;
-        font-size: 18px;
-        height: 48px;
-        padding: 0 12px; }
-        #portfolio .portfolio-item .item-url .url .fas {
-          padding: 0 0 0 6px; }
-    #portfolio .portfolio-item:hover .item-image, #portfolio .portfolio-item:focus .item-image, #portfolio .portfolio-item:active .item-image {
-      opacity: 1; }
-    #portfolio .portfolio-item:hover .item-name, #portfolio .portfolio-item:focus .item-name, #portfolio .portfolio-item:active .item-name {
-      background-color: rgba(0, 0, 0, 0.8);
-      min-height: 48px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
-      -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
-      -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32); }
-    #portfolio .portfolio-item:hover .item-url, #portfolio .portfolio-item:focus .item-url, #portfolio .portfolio-item:active .item-url {
+#portfolio .portfolio-category {
+  padding: 0 0 96px; }
+  #portfolio .portfolio-category h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    padding: 0 24px 36px;
+    text-align: center;
+    text-transform: lowercase; }
+
+#portfolio #web-design .portfolio-items {
+  display: grid; }
+  @media screen and (min-width: 768px) {
+    #portfolio #web-design .portfolio-items {
+      grid-template-columns: repeat(2, 1fr); } }
+
+#portfolio #web-design .portfolio-item {
+  position: relative; }
+  #portfolio #web-design .portfolio-item .item-image {
+    opacity: .2;
+    object-fit: cover;
+    transition: all 1s; }
+  #portfolio #web-design .portfolio-item .item-name {
+    position: absolute;
+    top: 10%;
+    right: 24px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 80%;
+    padding: 12px;
+    transition: all 1s; }
+    #portfolio #web-design .portfolio-item .item-name .name {
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: lowercase; }
+  #portfolio #web-design .portfolio-item .item-url {
+    position: absolute;
+    bottom: 10%;
+    right: 24px;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 0%;
+    transition: all 1s; }
+    #portfolio #web-design .portfolio-item .item-url .url {
+      display: none;
+      color: #fff;
+      font-size: 18px;
       height: 48px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
-      -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
-      -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32); }
-      #portfolio .portfolio-item:hover .item-url .url, #portfolio .portfolio-item:focus .item-url .url, #portfolio .portfolio-item:active .item-url .url {
-        display: flex;
-        align-items: center; }
+      padding: 0 12px; }
+      #portfolio #web-design .portfolio-item .item-url .url .fas {
+        padding: 0 0 0 6px; }
+  #portfolio #web-design .portfolio-item:hover .item-image, #portfolio #web-design .portfolio-item:focus .item-image, #portfolio #web-design .portfolio-item:active .item-image {
+    opacity: 1; }
+  #portfolio #web-design .portfolio-item:hover .item-name, #portfolio #web-design .portfolio-item:focus .item-name, #portfolio #web-design .portfolio-item:active .item-name {
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 48px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32); }
+  #portfolio #web-design .portfolio-item:hover .item-url, #portfolio #web-design .portfolio-item:focus .item-url, #portfolio #web-design .portfolio-item:active .item-url {
+    height: 48px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32); }
+    #portfolio #web-design .portfolio-item:hover .item-url .url, #portfolio #web-design .portfolio-item:focus .item-url .url, #portfolio #web-design .portfolio-item:active .item-url .url {
+      display: flex;
+      align-items: center; }
+
+#portfolio #custom-pc-building .portfolio-item {
+  padding: 0 0 72px; }
+
+#portfolio #custom-pc-building .item-inner {
+  position: relative;
+  margin: 0 0 12px; }
+
+#portfolio #custom-pc-building .item-image {
+  max-height: 250px; }
+
+#portfolio #custom-pc-building .item-name {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 48px;
+  padding: 0 12px; }
+  #portfolio #custom-pc-building .item-name .name {
+    color: #fff;
+    font-size: 24px;
+    text-transform: lowercase; }
+
+#portfolio #custom-pc-building .item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  padding: 0 12px; }
+  #portfolio #custom-pc-building .item-images .images {
+    max-height: 200px; }
 
 #contact .contact-grid {
   display: grid;

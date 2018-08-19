@@ -1,52 +1,100 @@
 [
   {
-    "services": [
-      {
-      }
-    ]
+    "services": {
+      "page_name": "Services",
+      "services": [
+        {
+          "name": "Web Design",
+          "description": "",
+          "image": "web-design"
+        },
+        {
+          "name": "Custom PC Building",
+          "description": "",
+          "image": "custom-pc-building"
+        },
+        {
+          "name": "Digital Signage",
+          "description": "",
+          "image": "digital-signage"
+        }
+      ]
+    }
   },
   {
-    "portfolio": [
-      {
-        "name": "Tech Feed",
-        "url": "https://sergiodperezp.github.io/tech-feed/",
-        "image": "tech-feed"
-      },
-      {
-        "name": "Systems & Architecture",
-        "url": "https://sysandarc.com/",
-        "image": "systems-and-architecture"
-      },
-      {
-        "name": "Antojo Taco Wrap",
-        "url": "https://antojotacowrap.com/",
-        "image": "antojo-taco-wrap"
-      },
-      {
-        "name": "Tripoli Halal Meat",
-        "url": "https://tripolihalalmeat.com/",
-        "image": "tripoli-halal-meat"
-      },
-      {
-        "name": "Apex Furniture Refinishing",
-        "url": "http://atlantafurniturerefinishing.com/",
-        "image": "apex-furniture-refinishing"
-      },
-      {
-        "name": "Sistemas & Arquitectura",
-        "url": "http://sistemasyarquitectura.com/",
-        "image": "sistemas-y-arquitectura"
-      },
-      {
-        "name": "Once In a Lifetime Bridal Boutique",
-        "url": "https://sysandarc.com/sites/1lifetimebridal/",
-        "image": "once-in-a-lifetime-bridal-boutique"
-      },
-      {
-        "name": "Taxi Familiar",
-        "url": "https://sysandarc.com/sites/taxifamiliar/",
-        "image": "taxi-familiar"
-      }
-    ]
+    "portfolio": {
+      "page_name": "Portfolio",
+      "portfolio_categories": [
+        {
+          "name": "Web Design",
+          "name_id": "web-design",
+          "portfolio_items": [
+            {
+              "name": "Tech Feed",
+              "url": "https://sergiodperezp.github.io/tech-feed/",
+              "image": "tech-feed"
+            },
+            {
+              "name": "Systems & Architecture",
+              "url": "https://sysandarc.com/",
+              "image": "systems-and-architecture"
+            },
+            {
+              "name": "Antojo Taco Wrap",
+              "url": "https://antojotacowrap.com/",
+              "image": "antojo-taco-wrap"
+            },
+            {
+              "name": "Tripoli Halal Meat",
+              "url": "https://tripolihalalmeat.com/",
+              "image": "tripoli-halal-meat"
+            },
+            {
+              "name": "Apex Furniture Refinishing",
+              "url": "http://atlantafurniturerefinishing.com/",
+              "image": "apex-furniture-refinishing"
+            },
+            {
+              "name": "Sistemas & Arquitectura",
+              "url": "http://sistemasyarquitectura.com/",
+              "image": "sistemas-y-arquitectura"
+            },
+            {
+              "name": "Once In a Lifetime Bridal Boutique",
+              "url": "https://sysandarc.com/sites/1lifetimebridal/",
+              "image": "once-in-a-lifetime-bridal-boutique"
+            },
+            {
+              "name": "Taxi Familiar",
+              "url": "https://sysandarc.com/sites/taxifamiliar/",
+              "image": "taxi-familiar"
+            }
+          ]
+        },
+        {
+          "name": "Custom PC Building",
+          "name_id": "custom-pc-building",
+          "portfolio_items": [
+            {
+              "name": "Gigabyte H55N-USB3",
+              "description": "",
+              "images": ["gigabyte-h55n-usb3-01", "gigabyte-h55n-usb3-02", "gigabyte-h55n-usb3-03", "gigabyte-h55n-usb3-04"]
+            },
+            {
+              "name": "Asus P5P43TD/USB3",
+              "description": "",
+              "images": ["asus-p5p43td-usb3-01", "asus-p5p43td-usb3-02", "asus-p5p43td-usb3-03"]
+            }
+          ]
+        },
+        {
+          "name": "Digital Signage",
+          "name_id": "digital_signage",
+          "portfolio_items": [
+
+          ]
+        }
+      ]
+    }
   }
 ]

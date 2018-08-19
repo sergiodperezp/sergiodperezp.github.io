@@ -105,6 +105,7 @@
               <!-- menu-items -->
               <ul class="menu-items">
                 <li class="menu-item"><a href="#home" class="menu-link">home</a></li>
+                <li class="menu-item"><a href="#services" class="menu-link">services</a></li>
                 <li class="menu-item"><a href="#portfolio" class="menu-link">portfolio</a></li>
                 <li class="menu-item"><a href="#contact" class="menu-link">contact me</a></li>
                 <li class="menu-item"><a href="#about" class="menu-link">about me</a></li>
@@ -128,6 +129,10 @@
   <script>getPage('home');</script>
   <!-- home -->
 
+  <!-- services -->
+  <!-- <section class="page" id="services"></section> -->
+  <!-- services -->
+
   <!-- portfolio -->
   <section class="page" id="portfolio"></section>
   <!-- portfolio -->
@@ -148,14 +153,13 @@
 
   <!-- scripts -->
   <!-- service worker -->
-  <script>
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('./sw.js')
-      .catch(function(err) {
-        console.error('Unable to register service worker.', err);
+  <!-- <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
       });
     }
-  </script>
+  </script> -->
   <!-- basic -->
   <script src="./assets/js/basic.min.js"></script>
   <!-- custom scripts -->
