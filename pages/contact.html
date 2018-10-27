@@ -10,8 +10,8 @@
     <!-- page-title -->
     <!-- content -->
     <div class="content">
-      <!-- contact-grid -->
-      <div class="contact-grid">
+      <!-- contact -->
+      <div class="contact">
         <!-- contact-item -->
         <div class="contact-item">
           <a href="tel:1-470-295-5723" class="item-inner">
@@ -25,7 +25,7 @@
         <div class="contact-item">
           <a href="sms:1-470-295-5723" class="item-inner">
             <i class="fas fa-comment-alt"></i>
-            <p>by message</p>
+            <p>by text message</p>
             <p>(470) 295-5723</p>
           </a>
         </div>
@@ -49,7 +49,77 @@
         </div>
         <!-- contact-item -->
       </div>
-      <!-- contact-grid -->
+      <!-- contact -->
+      <!-- contact-form -->
+      <form action="//formspree.io/sergiodperezp@gmail.com" method="POST" class="contact-form">
+        <!-- form-header -->
+        <div class="form-header">
+          <i class="fas fa-envelope-open"></i>
+          <p>or send me a message</p>
+        </div>
+        <!-- form-header -->
+        <!-- form-group -->
+        <div class="form-group">
+          <label for="contact-name">Name:</label>
+          <input type="text" id="contact-name" placeholder="Full Name" name="Name:">
+        </div>
+        <!-- form-group -->
+        <!-- form-group-inline -->
+        <div class="form-group-inline">
+          <!-- form-group -->
+          <div class="form-group">
+            <label for="contact-phone">Phone:</label>
+            <input type="tel" id="contact-phone" placeholder="XXX-XXX-XXXX" name="Phone:">
+          </div>
+          <!-- form-group -->
+          <!-- form-group -->
+          <div class="form-group">
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" placeholder="your-email@example.com" name="Email">
+          </div>
+          <!-- form-group -->
+        </div>
+        <!-- form-group-inline -->
+        <!-- form-group -->
+        <div class="form-group">
+          <label>How do you prefer to be contacted?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" value="Phone Call" name="Prefered Contacted Way:"><span>Phone Call</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" value="Text Message" name="Prefered Contacted Way:"><span>Text Message</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" value="WhatsApp" name="Prefered Contacted Way:"><span>WhatsApp</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" value="Email" name="Prefered Contacted Way:"><span>Email</span>
+            </label>
+          </div>
+        </div>
+        <!-- form-group -->
+        <!-- form-group -->
+        <div class="form-group">
+          <label for="contact-message">Message:</label>
+          <textarea  id="contact-message" placeholder="Tell me, how can I help you?" rows="4" name="Message:"></textarea>
+        </div>
+        <!-- form-group -->
+        <!-- form-group -->
+        <div class="form-group form-buttons">
+          <button type="reset" value="Clear">Reset</button>
+          <button type="submit" value="Submit">Submit</button>
+        </div>
+        <!-- form-group -->
+        <input type="hidden" name="_next" value="http://sergiodperezp.github.io/pages/thank-you.html">
+      </form>
+      <!-- contact-form -->
     </div>
     <!-- content -->
   </div>

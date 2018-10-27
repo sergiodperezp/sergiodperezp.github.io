@@ -1,0 +1,77 @@
+.navbar {
+  border-bottom: 1px solid $gray;
+  transition: all 1s;
+  .nav {
+    @include laptop-min {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-column-gap: 48px;
+    }
+  }
+  .navbar-header {
+    @include laptop-min {
+      padding-right: 0;
+    }
+    @include desktop-min {
+      padding-left: 96px;
+    }
+  }
+  .navbar-title {
+    color: $gray;
+    font-family: $primary-font;
+    font-weight: 900;
+    @include tablet-min {
+      font-size: 48px;
+    }
+    @include laptop {
+      font-size: 40px;
+    }
+  }
+  .navbar-icon {
+    @include laptop-min {
+      display: none;
+    }
+  }
+  #navbar-menu {
+    @include laptop-min {
+      position: inherit;
+      display: grid;
+      width: auto;
+      padding: 0 48px 0 0;
+    }
+    @include desktop-min {
+      padding-right: 96px;
+    }
+  }
+  .menu-items {
+    @include laptop-min {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+    }
+  }
+  .menu-item {
+    &:hover, &:focus, &:active {
+      background-color: $gray-lighter;
+    }
+    @include laptop-min {
+      padding: 0 12px;
+    }
+  }
+  .menu-link {
+    border-bottom: 2px solid $gray-lighter;
+    color: $gray;
+    font-size: 22px;
+    transition: all 1s;
+    @include laptop-min {
+      border-bottom-width: 4px;
+      font-size: 20px;
+    }
+    &:hover, &:focus, &:active {
+      border-bottom-color: $gray;
+    }
+  }
+}
+.navbar-special {
+  border-bottom: none;
+  @include box-shadow-bottom();
+}

@@ -1,0 +1,146 @@
+#portfolio {
+  .portfolio {
+    display: grid;
+    grid-row-gap: 96px;
+    @include tablet {
+    }
+  }
+  .portfolio-category {
+    .portfolio-name {
+      font-family: $primary-font;
+      padding: 0 24px 24px;
+      text-align: center;
+    }
+  }
+  #web-design {
+    @include desktop-min {
+      padding: 0 48px;
+    }
+    .portfolio-items {
+      display: grid;
+      grid-row-gap: 6px;
+      @include tablet-min {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 6px;
+      }
+      @include desktop-min {
+        grid-column-gap: 48px;
+      }
+    }
+    .portfolio-item {
+      position: relative;
+      .item-name {
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($black,.6);
+        min-height: 100%;
+        padding: 12px;
+        width: 100%;
+        transition: all 1s;
+      }
+      .name {
+        color: $white;
+        font-family: $primary-font;
+        font-size: 28px;
+        text-align: center;
+        text-transform: lowercase;
+        transition: all 1s;
+      }
+      .item-url {
+        position: absolute;
+        bottom: 12px;
+        right: 24px;
+        background-color: rgba($black,.8);
+        height: 0%;
+        transition: all 1s;
+      }
+      .url {
+        display: none;
+        color: $white;
+        font-size: 18px;
+        height: 48px;
+        padding: 0 12px;
+      }
+      .fas {
+        padding: 0 0 0 6px;
+      }
+      &:hover, &:focus, &:active {
+        .item-name {
+          min-height: 0%;
+          padding: 0;
+        }
+        .name {
+          font-size: 0px;
+        }
+        .item-url {
+          height: 48px;
+          @include box-shadow-bottom();
+        }
+        .url {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  #custom-pc-building {
+    .portfolio-items {
+      display: grid;
+      grid-row-gap: 48px;
+    }
+    .portfolio-item {
+      display: grid;
+      grid-row-gap: 6px;
+      @include tablet-min {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 6px;
+      }
+    }
+    .item-image {
+      height: 300px;
+      .image {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+  }
+  #digital-signage {
+    .portfolio-item {
+      position: relative;
+      height: 250px;
+      @include small-phone {
+        height: 200px;
+      }
+      @include tablet-min {
+        height: 350px;
+      }
+      @include desktop-min {
+        height: 400px;
+      }
+    }
+    .item-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      &:nth-child(4) {
+        animation: fade 16s 0s infinite;
+      }
+      &:nth-child(3) {
+        animation: fade 16s 4s infinite;
+      }
+      &:nth-child(2) {
+        animation: fade 16s 8s infinite;
+      }
+      &:nth-child(1) {
+        animation: fade 16s 12s infinite;
+      }
+    }
+  }
+}

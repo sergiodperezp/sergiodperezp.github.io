@@ -1,0 +1,36 @@
+#services {
+  background-color: $gray-lighter;
+  .services {
+    display: grid;
+    grid-row-gap: 48px;
+    @include laptop-min {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 48px;
+    }
+  }
+  .services-item {
+    background-color: $white;
+    text-align: center;
+  }
+  .service-image {
+    position: relative;
+    height: 200px;
+    @include tablet-min {
+      height: 300px;;
+    }
+    .image {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .service-content {
+    padding: 12px 12px 48px;
+    @include tablet-min {
+      padding: 24px 24px 72px;
+    }
+  }
+  .service-name {
+    font-family: $primary-font;
+  }
+}

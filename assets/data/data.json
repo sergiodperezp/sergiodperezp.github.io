@@ -1,12 +1,17 @@
 [
   {
     "services": {
-      "page_name": "Services",
+      "title": "Services",
       "services": [
         {
           "name": "Web Design",
           "description": "",
           "image": "web-design"
+        },
+        {
+          "name": "IT Support",
+          "description": "",
+          "image": "it-support"
         },
         {
           "name": "Custom PC Building",
@@ -23,21 +28,31 @@
   },
   {
     "portfolio": {
-      "page_name": "Portfolio",
+      "title": "Portfolio",
       "portfolio_categories": [
         {
           "name": "Web Design",
           "name_id": "web-design",
           "portfolio_items": [
             {
-              "name": "Tech Feed",
-              "url": "https://sergiodperezp.github.io/tech-feed/",
-              "image": "tech-feed"
-            },
-            {
               "name": "Systems & Architecture",
               "url": "https://sysandarc.com/",
               "image": "systems-and-architecture"
+            },
+            {
+              "name": "Kike's Tree Services",
+              "url": "https://kikestreeservices.com/",
+              "image": "kikes-tree-services"
+            },
+            {
+              "name": "DSJGA Ventures Inc",
+              "url": "https://dsjga.com/",
+              "image": "dsjga"
+            },
+            {
+              "name": "Central Services",
+              "url": "https://centralservicestax.com/",
+              "image": "central-services"
             },
             {
               "name": "Antojo Taco Wrap",
@@ -55,11 +70,6 @@
               "image": "apex-furniture-refinishing"
             },
             {
-              "name": "Sistemas & Arquitectura",
-              "url": "http://sistemasyarquitectura.com/",
-              "image": "sistemas-y-arquitectura"
-            },
-            {
               "name": "Once In a Lifetime Bridal Boutique",
               "url": "https://sysandarc.com/sites/1lifetimebridal/",
               "image": "once-in-a-lifetime-bridal-boutique"
@@ -68,6 +78,11 @@
               "name": "Taxi Familiar",
               "url": "https://sysandarc.com/sites/taxifamiliar/",
               "image": "taxi-familiar"
+            },
+            {
+              "name": "Tech Feed",
+              "url": "https://sergiodperezp.github.io/tech-feed/",
+              "image": "tech-feed"
             }
           ]
         },
@@ -81,17 +96,20 @@
               "images": ["gigabyte-h55n-usb3-01", "gigabyte-h55n-usb3-02", "gigabyte-h55n-usb3-03", "gigabyte-h55n-usb3-04"]
             },
             {
-              "name": "Asus P5P43TD/USB3",
+              "name": "Asus PSB Deluxe",
               "description": "",
-              "images": ["asus-p5p43td-usb3-01", "asus-p5p43td-usb3-02", "asus-p5p43td-usb3-03"]
+              "images": ["asus-p5b-deluxe-01", "asus-p5b-deluxe-02"]
             }
           ]
         },
         {
           "name": "Digital Signage",
-          "name_id": "digital_signage",
+          "name_id": "digital-signage",
           "portfolio_items": [
-
+            {
+              "name": "Tripoli Halal Meat",
+              "images": ["tripoli-halal-meat-01", "tripoli-halal-meat-02", "tripoli-halal-meat-03", "tripoli-halal-meat-04"]
+            }
           ]
         }
       ]

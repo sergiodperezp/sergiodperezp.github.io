@@ -1,0 +1,57 @@
+#about {
+  .about-image {
+    padding: 0 0 48px;
+    .image {
+      border-radius: 50%;
+      height: 192px;
+      object-fit: cover;
+      width: 192px;
+      @include tablet-min {
+        height: 240px;
+        width: 240px;
+      }
+      @include desktop-min {
+        height: 288px;
+        width: 288px;
+      }
+    }
+  }
+  .about {
+    display: grid;
+    grid-row-gap: 108px;
+    padding: 60px 0 0 0;
+    @include laptop-min {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 48px;
+    }
+  }
+  .about-item {
+    position: relative;
+    background-color: $gray-lighter;
+    padding: 72px 24px 48px;
+    text-align: center;
+    @include laptop-min {
+      padding: 96px 24px 72px;
+    }
+    .fas {
+      position: absolute;
+      top: -60px;
+      right: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $gray;
+      border-radius: 50%;
+      color: $white;
+      font-size: 60px;
+      height: 120px;
+      margin: 0 auto;
+      width: 120px;
+    }
+    p {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+  }
+}

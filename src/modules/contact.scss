@@ -1,0 +1,132 @@
+#contact {
+  background-color: $gray-lighter;
+  .contact {
+    display: grid;
+    grid-row-gap: 48px;
+    padding: 0 0 48px;
+    @include tablet-min {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 48px;
+    }
+  }
+  .contact-item {
+    background-color: $white;
+    padding: 24px 24px 48px;
+    text-align: center;
+    transition: all 1s;
+    @include box-shadow-bottom();
+    @include laptop-min {
+      padding: 48px 24px 72px;
+    }
+    .item-inner {
+      color: $gray;
+      display: block;
+    }
+    .fas, .fab {
+      font-size: 72px;
+      padding: 0 0 12px;
+    }
+    p {
+      font-size: 24px;
+      &:first-of-type {
+        padding: 0 0 12px;
+      }
+      &:last-child {
+        font-family: $primary-font;
+        font-weight: 700;
+      }
+    }
+    .email {
+      font-size: 18px;
+      @include small-phone {
+        font-size: 16px;
+      }
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+    &:hover, &:focus, &:active {
+      background-color: $gray;
+      border: none;
+      .item-inner {
+        color: $white;
+      }
+    }
+  }
+  .contact-form {
+    background-color: $white;
+    padding: 24px 12px 48px;
+    @include tablet-min {
+      padding: 24px 24px 48px;
+    }
+    @include laptop-min {
+      padding: 48px 48px 72px;
+    }
+    .form-header {
+      padding: 0 0 12px;
+      text-align: center;
+      .fas, .fab {
+        font-size: 72px;
+        padding: 0 0 12px;
+        text-align: center;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+    input, textarea {
+      border-bottom-color: $gray;
+      font-family: $primary-font;
+    }
+    .form-group-inline {
+      @include tablet-min {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .radio {
+      height: 48px;
+      margin: 0;
+      label {
+        margin: 0;
+        padding: 0;
+        input[type=radio] {
+          display: none;
+          &:checked+span {
+            color: $gray;
+            font-weight: 900;
+          }
+          &+span:before {
+            border: 1px solid $gray;
+            border-radius: 50%;
+            content: "";
+            display: inline-block;
+            margin-bottom: -12px;
+            margin-right: 12px;
+            height: 36px;
+            width: 36px;
+            transition: all 1s;
+          }
+          &:checked+span:before {
+            background: $gray;
+            border: 2px solid $gray;
+          }
+        }
+      }
+    }
+    .form-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      border-color: $gray;
+      color: $gray;
+      font-family: $primary-font;
+      @include box-shadow-bottom();
+      &:hover, &:focus, &:active {
+        background-color: $gray;
+        color: $white;
+      }
+    }
+  }
+}

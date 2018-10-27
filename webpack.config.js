@@ -3,7 +3,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './src/babel/script.js',
+  entry: './src/script.js',
   output: {
     path: path.resolve(__dirname, 'assets'),
     filename: 'js/script.js',

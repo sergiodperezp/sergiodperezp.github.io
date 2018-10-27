@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Sergio Perez | Front End Developer & IT Support</title>
+  <title>Sergio P&eacute;rez | Front End Developer & IT Support</title>
   <!-- web app -->
-  <meta name="description" content="Web Design, Web Development, IT Support for Windows, Linux, & macOS, Digital Signage">
+  <meta name="description" content="Front End Web Design & Development | IT Support for Windows, Linux, & macOS | Custom PC Building | Digital Signage">
   <link rel="manifest" href="./manifest.json">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -35,7 +35,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sergio Perez">
   <meta property="og:title" content="Front End Developer & IT Support">
-  <meta property="og:description" content="Web Design, Web Development, IT Support for Windows, Linux, & macOS, Digital Signage">
+  <meta property="og:description" content="Front End Web Design & Development | IT Support for Windows, Linux, & macOS | Digital Signage">
   <meta property="og:image" content="https://sergiodperezp.github.io/assets/images/sergio-perez-cover.png">
   <meta property="og:locale" content="en_US">
   <!-- twitter cards -->
@@ -67,17 +67,22 @@
     }
   </script>
   <!-- google analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128194507-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-128194507-1');
+  </script>
   <!-- google analytics -->
-  <!-- google tag manager -->
-  <!-- google tag manager -->
 </head>
 <body>
   <!-- header -->
   <header>
     <!-- navbar -->
     <nav class="navbar navbar-top">
-      <!-- container -->
-      <div class="container">
+      <!-- container-fluid -->
+      <div class="container-fluid">
         <!-- row -->
         <div class="row">
           <!-- nav -->
@@ -87,15 +92,15 @@
               <!-- navbar-brand -->
               <a href="./" class="navbar-brand">
                 <!-- navbar-title -->
-                <h1 class="navbar-title">Sergio Perez</h1>
+                <h1 class="navbar-title">Sergio P&eacute;rez</h1>
                 <!-- navbar-title -->
               </a>
               <!-- navbar-brand -->
               <!-- navbar-icon -->
               <svg height="24" width="24" class="navbar-icon navbar-open">
-                <path d="M 0,6 24,6" stroke="#404040" stroke-width="2" class="path-one"/>
-                <path d="M 0,12 24,12" stroke="#404040" stroke-width="2" class="path-two"/>
-                <path d="M 0,18 24,18" stroke="#404040" stroke-width="2" class="path-three"/>
+                <path d="M 0,6 24,6" stroke="#404040" stroke-width="1" class="path-one"/>
+                <path d="M 0,12 24,12" stroke="#404040" stroke-width="1" class="path-two"/>
+                <path d="M 0,18 24,18" stroke="#404040" stroke-width="1" class="path-three"/>
               </svg>
               <!-- navbar-icon -->
             </div>
@@ -104,11 +109,11 @@
             <div id="navbar-menu">
               <!-- menu-items -->
               <ul class="menu-items">
-                <li class="menu-item"><a href="#home" class="menu-link">home</a></li>
-                <li class="menu-item"><a href="#services" class="menu-link">services</a></li>
-                <li class="menu-item"><a href="#portfolio" class="menu-link">portfolio</a></li>
-                <li class="menu-item"><a href="#contact" class="menu-link">contact me</a></li>
-                <li class="menu-item"><a href="#about" class="menu-link">about me</a></li>
+                <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="#services" class="menu-link">Services</a></li>
+                <li class="menu-item"><a href="#portfolio" class="menu-link">Portfolio</a></li>
+                <li class="menu-item"><a href="#contact" class="menu-link">Contact Me</a></li>
+                <li class="menu-item"><a href="#about" class="menu-link">About Me</a></li>
               </ul>
               <!-- menu-items -->
             </div>
@@ -118,37 +123,63 @@
         </div>
         <!-- row -->
       </div>
-      <!-- container -->
+      <!-- container-fluid -->
     </nav>
     <!-- navbar -->
   </header>
   <!-- header -->
 
   <!-- home -->
-  <section id="home"></section>
-  <script>getPage('home');</script>
+  <section id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="home">
+          <div class="home-content">
+            <div class="home-item">
+              <h1 class="home-title">Digital Signage</h1>
+            </div>
+          </div>
+          <div class="home-content">
+            <div class="home-item">
+              <h1 class="home-title">Custom PC Building</h1>
+            </div>
+          </div>
+          <div class="home-content">
+            <div class="home-item">
+              <h1 class="home-title">IT Support for Windows, Linux, & macOS</h1>
+            </div>
+          </div>
+          <div class="home-content">
+            <div class="home-item">
+              <h1 class="home-title">Front End Web Design & Development</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- home -->
 
   <!-- services -->
-  <!-- <section class="page" id="services"></section> -->
+  <section class="basic-page" id="services"></section>
   <!-- services -->
 
   <!-- portfolio -->
-  <section class="page" id="portfolio"></section>
+  <section class="basic-page" id="portfolio"></section>
   <!-- portfolio -->
 
   <!-- contact -->
-  <section class="page" id="contact"></section>
+  <section class="basic-page" id="contact"></section>
   <script>getPage('contact');</script>
   <!-- contact -->
 
   <!-- about -->
-  <section class="page" id="about"></section>
+  <section class="basic-page" id="about"></section>
   <script>getPage('about');</script>
   <!-- about -->
 
   <!-- footer -->
-  <footer></footer>
+  <section class="basic-page" id="footer"></section>
   <!-- footer -->
 
   <!-- scripts -->
