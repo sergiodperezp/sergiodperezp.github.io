@@ -116,15 +116,15 @@ var portfolioClass = exports.portfolioClass = document.querySelector('.portfolio
 
 __webpack_require__(3);
 
-__webpack_require__(10);
+__webpack_require__(4);
 
 __webpack_require__(0);
 
 __webpack_require__(1);
 
-__webpack_require__(4);
-
 __webpack_require__(5);
+
+__webpack_require__(6);
 
 /***/ }),
 /* 3 */
@@ -134,6 +134,23 @@ __webpack_require__(5);
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('navbar-special');
+  } else {
+    navbar.classList.remove('navbar-special');
+  }
+});
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -250,7 +267,7 @@ function portfolioDigitalSignage(digitalSignage) {
 }
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -267,27 +284,6 @@ if (footerPage) {
 
   document.querySelector('#year').innerHTML = year.getFullYear();
 }
-
-/***/ }),
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', function () {
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('navbar-special');
-  } else {
-    navbar.classList.remove('navbar-special');
-  }
-});
 
 /***/ })
 /******/ ]);
